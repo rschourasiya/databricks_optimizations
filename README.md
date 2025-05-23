@@ -26,9 +26,11 @@ Adopt serverless for workloads that benefit from autoscaling and minimal infrast
 - **What didn’t work:** One pool per application.
 - **What worked:** One pool per runtime version shared across applications.
 
-### 8. Use Serverless SQL for Interactive Applications
-Great for APIs, Power BI, and ad hoc queries that require fast, scalable access.
-
+### 8. Prioritize Cluster Types for Interactive Use Cases
+Interactive workloads such as APIs, Power BI dashboards, and ad hoc queries benefit from fast, scalable access:
+- **Use Serverless SQL Warehouse** for short-lived queries with infrequent load. It offers instant startup and cost efficiency for low-traffic scenarios.
+- **Use Managed SQL Warehouse** for applications with continuous or high-frequency access, ensuring stable performance under sustained load.
+- 
 ### 9. Prioritize Cluster Types for Batch Jobs
 Use the following order of preference:
 1. Serverless Job Clusters
