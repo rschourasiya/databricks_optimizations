@@ -12,3 +12,5 @@
 11. Go for code optimization . have deep dive on machine performance while running the jobs.
 12. For job cluster if you require parallelist use databricks workflow
 13. If a query you think would be slower in any database, it would definitely be slower in databricks. Apply all database optimization techiniques that you could have done in any Relational database.
+14. Combine smaller jobs in bigger jobs but dont let the resumability go away with grouping.
+15. Apply optimization techiniches like z order or liquid clusterin in higher versions
